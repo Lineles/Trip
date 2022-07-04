@@ -25,6 +25,24 @@ font-size: 16px;
 
 
 /*/
+/* -- Header -- */
+
+header{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 50px;
+  background-color: var(--2-color);
+}
+
+.header-h1{
+  font-style: italic;
+  z-index: 10;
+  color: var(--3-color)
+}
+
+
+/*/
 /* -- Nav Bar -- */
 
   .nav-flex{
@@ -33,44 +51,79 @@ font-size: 16px;
   justify-content: space-between;
   align-items: center;
   height: 50px;
-  border: #1D1C1C solid 1px;
+  /* border: #1D1C1C solid 1px; */
   background-color: var(--4-color);
   }
 
   .signUp {
     background-color: var(--4-color);
     border: var(--4-color);
-    padding-bottom: 3px;
+    padding-bottom: 4px;
     position: relative;
     transition: all 250ms ease;
+    margin-left: 20px;
   }
 
   .signUp:hover{
     border-bottom: #FF5678 solid 3px;
+    font-weight:900
+  }
+
+
+  .login-input{
+    background-color: var(--4-color);
+    padding-bottom: 3px;
+    transition: all 250ms ease;
+    position: relative;
+    border: var(--2-color) solid 2px;
+    padding: 4px;
+    border-radius: 20px 20px 20px 20px;
+  }
+
+  .login-input:hover{
+    border-radius: 20px 20px 0 0;
+    border: var(--1-color) solid 2px;
+  }
+
+  .login{
+    background-color: var(--4-color);
+    border: var(--4-color);
+    padding-bottom: 4px;
+    position: relative;
+    transition: all 250ms ease;
+    margin-right: 20px;
+  }
+
+  .login:hover{
+    border-bottom: #FF5678 solid 3px;
+    font-weight: 900
   }
 
 
 
 
-  
+
+
+
 /*/
 /* -- Main -- */
 
-.main-grit{    
+.main-flex{    
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    justify-items: center;
-    gap: 20px;
-    background-color: var(--6-color)
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--6-color);
+    row-gap: 350px;
+    column-gap: 50px;
+    margin: 50px;
 }
 
-.grit-item{
-    padding: 20px 100px;
-    margin: 5px;
-    border: solid black 1px;
-    background-color: var(--2-color);
-    position: relative;
+.flex-item{
+    width: 90%;
+    height: 40px;
+    /* border: solid black 1px; */
+    /* background-color: var(--2-color); */
     transition: all 250ms ease;
     animation: effekt10-out 500ms forwards;
   }
@@ -93,3 +146,83 @@ font-size: 16px;
   }
 
 
+  .effekt20:hover{
+    box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3), 0 1.5rem 1.2rem rgba(0, 0, 0, 0.22);
+    animation: effect20-in 500ms forwards;
+  }
+  
+  @keyframes effect20-in {
+    0%   {transform: translate(0, 0);}
+    50%   {transform: translate(0, 10px);}
+    100%   {transform: translate(0, 10px) rotate(-5deg);}
+  }
+  
+  @keyframes effekt20-out {
+    0%   {transform: translate(0, 10px) rotate(-5deg);}
+    50%   {transform: translate(0, 10px);}
+    100%   {transform: translate(0, 0);}
+  }
+
+  .effekt30:hover{
+    box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3), 0 1.5rem 1.2rem rgba(0, 0, 0, 0.22);
+    animation: effect30-in 500ms forwards;
+  }
+  
+  @keyframes effect30-in {
+    0%   {transform: translate(0, 0);}
+    50%   {transform: translate(0, 20px) rotate(-5deg);}
+    100%   {transform: translate(0, -30px) rotate(-15deg);}
+  }
+  
+  @keyframes effekt30-out {
+    0%   {transform: translate(0, 0px) rotate(-15deg);}
+    50%   {transform: translate(0, 20px) rotate(-5deg);}
+    100%   {transform: translate(0, -30);}
+  }
+
+  .effekt40:hover{
+    box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3), 0 1.5rem 1.2rem rgba(0, 0, 0, 0.22);
+    animation: effect40-in 500ms forwards;
+  }
+  
+  @keyframes effect40-in {
+    0%   {transform: translate(0, 0);}
+    20%   {transform: translate(0, -10px);}  
+    40%   {transform: translate(0, 0px);}
+    60%   {transform: translate(0, -10px);}
+    80%   {transform: translate(0, 0px) }
+    100%   {transform: translate(0, -10px);}
+  }
+  
+  @keyframes effekt40-out {
+    20%   {transform: translate(0, -10px);}
+    40%   {transform: translate(0, 0px);}  
+    60%   {transform: translate(0, -10px);}
+    80%   {transform: translate(0, 0px);}
+    100%   {transform: translate(0, -10px);}
+  }
+
+
+
+
+
+  
+.img-master{
+  max-width: 110%;
+  padding: 10px;
+  background-color: var(--5-color);
+  border: var(--3-color) solid 1px;
+  border-radius: 2px 0 1 0;
+}
+
+.img-h1{ 
+  position: absolute;
+  top: 150px;
+  left: 50px;
+}
+
+.image-p{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
