@@ -2,10 +2,59 @@
     --1-color: #FF5678;
     --2-color: #149770;
     --3-color: #1D1C1C;
-    --4-color: #917D6E;
+    --4-color: #00ccbb;
     --5-color: #F6F2EF; 
     --6-color:#FFFFFF;   
 }
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 40px;
+}
+
+h2{
+font-family: 'Lato', sans-serif;
+font-size: 32px;
+}
+
+p, a, button {
+font-family: 'Lato', sans-serif; 
+text-decoration: none;
+font-size: 16px;
+}
+
+
+/*/
+/* -- Nav Bar -- */
+
+  .nav-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  border: #1D1C1C solid 1px;
+  background-color: var(--4-color);
+  }
+
+  .signUp {
+    background-color: var(--4-color);
+    border: var(--4-color);
+    padding-bottom: 3px;
+    position: relative;
+    transition: all 250ms ease;
+  }
+
+  .signUp:hover{
+    border-bottom: #FF5678 solid 3px;
+  }
+
+
+
+
+  
+/*/
+/* -- Main -- */
 
 .main-grit{    
     display: grid;
@@ -42,3 +91,5 @@
     50%   {transform: translate(0, -10px);}
     100%   {transform: translate(0, 0);}
   }
+
+
