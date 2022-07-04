@@ -1,0 +1,44 @@
+:root {
+    --1-color: #FF5678;
+    --2-color: #149770;
+    --3-color: #1D1C1C;
+    --4-color: #917D6E;
+    --5-color: #F6F2EF; 
+    --6-color:#FFFFFF;   
+}
+
+.main-grit{    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+    background-color: var(--6-color)
+}
+
+.grit-item{
+    padding: 20px 100px;
+    margin: 5px;
+    border: solid black 1px;
+    background-color: var(--2-color);
+    position: relative;
+    transition: all 250ms ease;
+    animation: effekt10-out 500ms forwards;
+  }
+  
+  .effekt10:hover{
+    box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3), 0 1.5rem 1.2rem rgba(0, 0, 0, 0.22);
+   animation: effect10-in 500ms forwards;
+  }
+  
+  @keyframes effect10-in {
+    0%   {transform: translate(0, 0);}
+    50%   {transform: translate(0, -10px);}
+    100%   {transform: translate(0, -10px) rotate(5deg);}
+  }
+  
+  @keyframes effekt10-out {
+    0%   {transform: translate(0, -10px) rotate(5deg);}
+    50%   {transform: translate(0, -10px);}
+    100%   {transform: translate(0, 0);}
+  }
