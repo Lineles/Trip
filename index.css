@@ -4,7 +4,8 @@
     --3-color: #1D1C1C;
     --4-color: #00ccbb;
     --5-color: #F6F2EF; 
-    --6-color:#FFFFFF;   
+    --6-color:#FFFFFF; 
+    --7-color: #2b423b;  
 }
 
 h1 {
@@ -114,22 +115,27 @@ header{
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: var(--6-color);
-    row-gap: 350px;
-    column-gap: 50px;
+    /* row-gap: 350px; */
+    /* column-gap: 50px; */
     margin: 50px;
+    /* gap: 20px; */
 }
 
 .flex-item{
-    width: 90%;
-    height: 40px;
-    /* border: solid black 1px; */
-    /* background-color: var(--2-color); */
+    border: solid black 1px;
     transition: all 250ms ease;
     animation: effekt10-out 500ms forwards;
+    background-color: var(--5-color);
+    z-index: 1;
   }
-  
+
+  .flex-item:hover{
+    z-index: 10;
+  }
+
   .effekt10:hover{
-    box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3), 0 1.5rem 1.2rem rgba(0, 0, 0, 0.22);
+    box-shadow: 0 1.9rem 3.8rem var(--1-color), 0 1.5rem 1.2rem var(--1-color);
+    /* box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3), 0 1.5rem 1.2rem rgba(0, 0, 0, 0.22); */
    animation: effect10-in 500ms forwards;
   }
   
@@ -147,7 +153,8 @@ header{
 
 
   .effekt20:hover{
-    box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3), 0 1.5rem 1.2rem rgba(0, 0, 0, 0.22);
+    box-shadow: 0 1.9rem 3.8rem var(--1-color), 0 1.5rem 1.2rem var(--1-color);
+    /* box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3), 0 1.5rem 1.2rem rgba(0, 0, 0, 0.22); */
     animation: effect20-in 500ms forwards;
   }
   
@@ -164,7 +171,8 @@ header{
   }
 
   .effekt30:hover{
-    box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3), 0 1.5rem 1.2rem rgba(0, 0, 0, 0.22);
+    box-shadow: 0 1.9rem 3.8rem var(--1-color), 0 1.5rem 1.2rem var(--1-color);
+    /* box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3), 0 1.5rem 1.2rem rgba(0, 0, 0, 0.22); */
     animation: effect30-in 500ms forwards;
   }
   
@@ -181,7 +189,7 @@ header{
   }
 
   .effekt40:hover{
-    box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3), 0 1.5rem 1.2rem rgba(0, 0, 0, 0.22);
+    box-shadow: 0 1.9rem 3.8rem var(--1-color), 0 1.5rem 1.2rem var(--1-color);
     animation: effect40-in 500ms forwards;
   }
   
@@ -208,21 +216,21 @@ header{
 
   
 .img-master{
-  max-width: 110%;
-  padding: 10px;
-  background-color: var(--5-color);
-  border: var(--3-color) solid 1px;
-  border-radius: 2px 0 1 0;
+  max-width: 90%;
+  background-color: var(--7-color);
+  border: var(--5-color) solid 15px;
 }
 
 .img-h1{ 
-  position: absolute;
-  top: 150px;
-  left: 50px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  background-color: var(--5-color);
 }
 
 .image-p{
-  position: absolute;
-  top: 20px;
-  left: 20px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  background-color: var(--5-color);
 }
