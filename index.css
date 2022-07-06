@@ -24,7 +24,9 @@ text-decoration: none;
 font-size: 16px;
 }
 
-
+body{
+  background-color: var(--3-color);
+}
 /*/
 /* -- Header -- */
 
@@ -114,11 +116,11 @@ header{
     align-items: center;
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: var(--6-color);
+    background-color: var(--3-color);
     /* row-gap: 350px; */
     /* column-gap: 50px; */
     margin: 50px;
-    /* gap: 20px; */
+    gap: 20px;
 }
 
 .flex-item{
@@ -226,6 +228,8 @@ header{
   padding: 0;
   margin: 0;
   background-color: var(--5-color);
+  color: var(--3-color);
+  font-size: 32px;
 }
 
 .image-p{
